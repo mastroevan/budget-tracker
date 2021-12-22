@@ -1,6 +1,6 @@
 module.exports = {
   host: 'localhost',
-  user: process.env.USER,
+  user: 'root',
   password: process.env.PASSWORD,
-  database: budgetTracker
+  database: 'budgetTracker'
 };
