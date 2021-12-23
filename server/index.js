@@ -22,7 +22,7 @@ app.get('/api/categories', (req, res) => {
   })
 })
 
-app,post('/api/categories', (req, res) => {
+app.post('/api/categories', (req, res) => {
   const {description, amount} = req.body;
   db.addCategory([description, amount], (data) => {
     console.log(data);
