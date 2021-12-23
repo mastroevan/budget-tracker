@@ -29,3 +29,7 @@ const addCategory = function(values, callback) {
     callback(data);
   })
 };
+
+module.exports.getAllReciepts = getAllReciepts;
+module.exports.getCategories = getCategories;
+module.exports.addCategory = addCategory;
