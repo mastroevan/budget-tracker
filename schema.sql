@@ -15,7 +15,7 @@ CREATE TABLE transactions (
 
 CREATE TABLE categories (
   id int NOT NULL AUTO_INCREMENT,
-  description varchar(50) NOT NULL,
+  description varchar(50) NOT NULL UNIQUE,
   amount int,
   PRIMARY KEY(ID)
 );

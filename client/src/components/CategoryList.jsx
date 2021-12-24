@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 const CategoryList = ({categories}) => {
-  return (
+  return(
     <div className="category-list">
       {
         categories.map((category) => {
-          return (
-            <div className="category-type">{category}</div>
+          return(
+            <div className='category-title'>{category}</div>
           )
         })
       }
