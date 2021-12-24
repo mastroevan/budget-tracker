@@ -5,4 +5,12 @@ export function getTransactions(callback) {
     .then((res) => {
       callback(res.data);
     }).catch(err => console.log(err));
-}
+};
+
+export function getCategories(callback) {
+  axios.get('/api/categories')
+    .then((res) => {
+      callback(res.data);
+    }).catch(err => console.log(err));
+};
+

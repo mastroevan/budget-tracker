@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getTransactions } from "./util";
 import TransactionList from "./TransactionList.jsx";
+import CategoryForm from "./CategoryForm.jsx";
 
 
 const App = () => {
@@ -18,8 +19,8 @@ const App = () => {
         <TransactionList transactions={transactions} />
         <div className="category">
           <h3>Budget Categories</h3>
-          {/* <CategoryList />
-          <CategoryForm /> */}
+          {/* <CategoryList /> */}
+          <CategoryForm />
         </div>
       </div>
     </div>

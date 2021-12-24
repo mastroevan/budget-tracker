@@ -5,7 +5,7 @@ const TransactionList = ({transactions}) => {
     <div className="txn">
       <h3>Transactions</h3>
       <div className="txn-table">
-        <div className="txn-header txn-row">
+        <div className="txn-header txn-row" id="header">
           <div className="txn-data">Date</div>
           <div className="txn-data">Description</div>
           <div className="txn-data">Amount</div>
