@@ -19,7 +19,7 @@ const TransactionList = ({transactions, categories}) => {
                 <div className="txn-data" className="description">{transaction.description}</div>
                 <div className="txn-data" className="amount">{transaction.amount}</div>
                 <div className='txn-data' className="category">
-                  <select name="categories" id="category"> {
+                  <select name="categories" value="none" id="category"> {
                     categories.map((category) => {
                       return (
                         <option value="category">{category.description}</option>
