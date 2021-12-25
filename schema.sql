@@ -15,7 +15,7 @@ CREATE TABLE transactions (
 
 CREATE TABLE categories (
   id int NOT NULL AUTO_INCREMENT,
-  description varchar(50) NOT NULL UNIQUE,
+  description varchar(50) NOT NULL,
   amount int,
   PRIMARY KEY(ID)
 );
@@ -40,3 +40,4 @@ INSERT INTO transactions (id, amount, description, date) VALUES (17, -9.99, "SPO
 INSERT INTO transactions (id, amount, description, date) VALUES (18, -3.85, "EQUATOR", "2017-08-20");
 INSERT INTO transactions (id, amount, description, date) VALUES (19, -18.00, "AMC", "2017-08-21");
 INSERT INTO transactions (id, amount, description, date) VALUES (20, -11.42, "TARGET", "2017-08-22");
+INSERT INTO categories (id, description, amount) VALUES (1, "none", 0);

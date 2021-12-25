@@ -9,7 +9,7 @@ const TransactionList = ({transactions, categories}) => {
           <div className="txn-data">Date</div>
           <div className="txn-data">Description</div>
           <div className="txn-data">Amount</div>
-          <div className="txn-data">Category</div>
+          {categories.length !== 0 ? (<div className="txn-data">Category</div>) : null}
         </div>
         {
           transactions.map((transaction) => {
@@ -19,14 +19,16 @@ const TransactionList = ({transactions, categories}) => {
                 <div className="txn-data" className="description">{transaction.description}</div>
                 <div className="txn-data" className="amount">{transaction.amount}</div>
                 <div className='txn-data' className="category">
-                  <select name="categories" value="none" id="category"> {
-                    categories.map((category) => {
-                      return (
-                        <option value="category">{category.description}</option>
-                      );
-                    })
-                  }
-                  </select>
+                    { categories.length !== 0 ? (
+                        categories.map((category) => {
+                          return(
+                            <select>
+                            <option value="none" selected disabled hidden>Add a category</option>
+                            <option className='category-title'>{category}</option>
+                           </select>
+                          )
+                        })) : null
+                    }
                 </div>
               </div>
             )
